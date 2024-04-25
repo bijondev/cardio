@@ -158,7 +158,8 @@ class MainActivity : AppCompatActivity() {
             if (result != null) {
                 Log.d("Card", result.toString())
                 outStr += "Card number: " + result.redactedCardNumber + "\n"
-                outStr += "Card number: " + result.cardNumber + "\n"
+                outStr += "Card expiryMonth: " + result.expiryMonth + "\n"
+                outStr += "Card expiryYear: " + result.expiryYear + "\n"
                 val cardType = result.cardType
                 cardTypeImage = cardType.imageBitmap(this)
                 outStr += ("Card type: " + cardType.name + " cardType.getDisplayName(null)="
